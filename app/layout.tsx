@@ -12,7 +12,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
         <title>UltraQuad IT Consulting</title>
-        
+
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+
         <meta
           name="description"
           content="Building Intelligent Solutions for the Future"
@@ -22,14 +25,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
           name="google-site-verification"
           content="LyjzR2V-4NCRTTiafLgeg-6kYYlQFUAoPuVEZfEzeZM"
         />
-        <meta name="keyword" content="ultraquad,ultraquad company,ultraquad consultancy,IT consulting companies in kenya, Cybersecurity solutions,AI Consulting,Fullstack Services" />
 
+        <meta
+          name="keyword"
+          content="ultraquad,ultraquad company,ultraquad consultancy,IT consulting companies in kenya, Cybersecurity solutions,AI Consulting,Fullstack Services"
+        />
       </head>
 
-
-      <Header />
-      <body className="font-sans antialiased">{children}</body>
-      <Footer />
+      <body className="font-sans antialiased">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
