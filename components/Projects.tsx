@@ -8,13 +8,11 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Link
           href="/project"
-          className="relative inline-flex items-center justify-center rounded-full px-8 py-4 text-lg font-bold text-white shadow-lg shadow-teal-200 
-            transition-transform duration-300 transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-teal-300
-            bg-gradient-to-r from-teal-400 via-sky-500 to-indigo-500
-            animate-subtle-bounce animate-gradient-x"
+          className="px-8 py-4 rounded-full bg-sky-500 hover:bg-sky-600 text-white shadow-lg hover:shadow-sky-500/30 transition-all duration-300 font-semibold inline-flex items-center justify-center"
         >
           View Our Portfolio
         </Link>
+
         <p className="mt-4 text-gray-600 text-lg">
           Explore our Ultraquad projects and see how we build innovation.
         </p>
@@ -23,9 +21,15 @@ export default function Projects() {
       <style jsx>{`
         /* Gradient animation */
         @keyframes gradient-x {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
         }
 
         .animate-gradient-x {
@@ -35,8 +39,13 @@ export default function Projects() {
 
         /* Subtle up-down bounce */
         @keyframes subtle-bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-6px); }
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
         }
 
         .animate-subtle-bounce {

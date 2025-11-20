@@ -44,7 +44,7 @@ export default function Projectpage() {
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-400 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-400 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="text-sky-500 font-semibold tracking-widest uppercase mb-4 text-sm">
@@ -57,7 +57,8 @@ export default function Projectpage() {
               We don't just talk about innovation — we have built it.
             </p>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our portfolio showcases how technology can make a tangible difference in people's lives.
+              Our portfolio showcases how technology can make a tangible
+              difference in people's lives.
             </p>
           </div>
         </div>
@@ -76,7 +77,9 @@ export default function Projectpage() {
               >
                 {/* Content Section */}
                 <div className="lg:w-1/2 w-full">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} text-white shadow-lg mb-6 transform group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-r ${project.gradient} text-white shadow-lg mb-6 transform group-hover:scale-110 transition-transform duration-300`}
+                  >
                     {project.icon}
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
@@ -85,12 +88,16 @@ export default function Projectpage() {
                   <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                     {project.description}
                   </p>
-                  <div className={`h-1 w-20 bg-gradient-to-r ${project.gradient} rounded-full`}></div>
+                  <div
+                    className={`h-1 w-20 bg-gradient-to-r ${project.gradient} rounded-full`}
+                  ></div>
                 </div>
 
                 {/* Image Section */}
                 <div className="lg:w-1/2 w-full">
-                  <div className={`relative h-64 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-3xl bg-gradient-to-br ${project.bgGradient}`}>
+                  <div
+                    className={`relative h-64 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl transform transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-3xl bg-gradient-to-br ${project.bgGradient}`}
+                  >
                     <Image
                       src={project.image}
                       alt={project.imageAlt}
@@ -100,7 +107,9 @@ export default function Projectpage() {
                       priority={index === 0}
                     />
                     {/* Overlay gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                    ></div>
                   </div>
                 </div>
               </article>
@@ -111,7 +120,9 @@ export default function Projectpage() {
           <div className="mt-24 mb-16">
             <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-sky-50 to-teal-50 rounded-3xl p-12 border border-sky-100 shadow-lg">
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
-                These projects represent our hands-on experience and our commitment to developing solutions that solve real-world challenges.
+                These projects represent our hands-on experience and our
+                commitment to developing solutions that solve real-world
+                challenges.
               </p>
             </div>
           </div>
@@ -120,7 +131,7 @@ export default function Projectpage() {
           <div className="flex justify-center">
             <Link
               href="/"
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-teal-500 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-sky-200 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:from-sky-600 hover:to-teal-600 focus:outline-none focus:ring-4 focus:ring-sky-300"
+              className="px-8 py-4 rounded-full bg-sky-500 hover:bg-sky-600 text-white shadow-lg hover:shadow-sky-500/30 transition-all duration-300 font-semibold inline-flex items-center justify-center"
             >
               Back to Home
             </Link>
